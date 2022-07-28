@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.inicio {
+	background: #ffc107;
+	color: white;
+}
+
+
+.amarelo {
+	background: #ffc107;
+}
+
+
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+#espaço {
+	margin-top: 15px;
+}
+
+footer p a {
+	margin: 5px 5px;
+	border-radius: 20px;
+	background-color: #ffc107;
+	color: white;
+	padding: 10px;
+}
+
+footer p a:hover {
+	margin: 5px 5px;
+	color: #ffc107;
+	background-color: white;
+	text-decoration: none;
+}
+
+body.home #navegacao a#home,
+body.orcamento #navegacao a#orcamento,
+body.consulta #navegacao a#consulta {
+	color: #424140;
+	background: #fff;
+	cursor: text;
+	border-radius: 9px 9px;
+}

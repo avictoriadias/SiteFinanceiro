@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
+<html>
+	<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Victoria da Cruz Dias"/>
@@ -14,7 +13,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Finans - finanças pessoais</title>
   </head>
-  <body class="home">
+
+  <body class="orcamento">
+
     <header>
       <nav class="navbar navbar-expand-sm navbar-light bg-warning">
         <div class="container">
@@ -37,7 +38,7 @@
               <li class="navbar-item">
                 <a href="consulta.html" id="consulta" class="nav-link">Consulta</a>
               </li>
-              
+                
               <li class="navbar-item">
                 <a href="login.html" class="btn btn-outline-light ml-4">Entrar</a>
               </li>
@@ -46,113 +47,103 @@
         </div>
       </nav>
     </header>
+    
+    <section class="inicio" style="padding-top: 60px; padding-bottom: 30px">
+      <div class="container">
+        <div class="row">
+          <div class="col mb-5">
+            <h1 class="display-4">Simule seu orçamento pessoal</h1>
+            <h2>Registre sua nova despesa</h2>
+          </div>
+        </div>
+    </section>
+    
+    <section class="caixa">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <select class="form-control" id="ano">
+              <option value="">Ano</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+            </select>
+          </div>
 
-    <section class="inicio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 d-flex">
-            <div class="align-self-center">
-              <h1 class="display-4">
-              Suas contas descomplicadas                
-              </h1>
-              <p>
-                Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta on-line que vai facilitar sua vida financeira.
-              </p>
-              <form class="mt-4 mb-4">
-                <div class="input-group input-group-lg">
-                  <input type="text" placeholder="Seu e-mail" class="form-control">
-                  <div class="input-group-append">
-                    <button type="button" class="btn btn-dark">Cadastre-se</button>
-                  </div>
-                </div>
-              </form>
-              <p>
-                Disponível para
-                <a href="" class="btn btn-outline-light">
-                  <i class="fab fa-android fa-lg"></i>
-                </a>
-                <a href="" class="btn btn-outline-light">
-                  <i class="fab fa-apple fa-lg"></i>
-                </a>
-              </p>
-            </div>
+          <div class="col-md-2">
+            <select class="form-control" id="mes">
+              <option value="">Mês</option>
+              <option value="1">Janeiro</option>
+              <option value="2">Fevereiro</option>
+              <option value="3">Março</option>
+              <option value="4">Abril</option>
+              <option value="5">Maio</option>
+              <option value="6">Junho</option>
+              <option value="7">Julho</option>
+              <option value="8">Agosto</option>
+              <option value="9">Setembro</option>
+              <option value="10">Outubro</option>
+              <option value="11">Novembro</option>
+              <option value="12">Dezembro</option>
+            </select>
           </div>
-          <div class="col-md-6 d-none d-md-block">
-            <img src="assets/capa-mulher.png">
+          
+          <div class="col-md-2">
+            <input type="text" class="form-control" placeholder="Dia" id="dia" />
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="caixa">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 d-flex">
-            <div class="align-self-center">
-              <h2>
-                Saiba para onde vai seu dinheiro
-              </h2>
-              <p>
-                Com o Finans, você categoriza todos os seus lançamentos.
-                Com gráficos simples, você sabe de onde vem e para onde vai o seu dinheiro.
-              </p>
-              <a href="" class="btn btn-dark">Veja Mais</a>
-            </div>
-          </div>
+
           <div class="col-md-6">
-            <img src="assets/saiba.png" class="img-fluid">
+            <select class="form-control" id="tipo">
+              <option value="">Tipo</option>
+              <option value="1">Alimentação</option>
+              <option value="2">Educação</option>
+              <option value="3">Lazer</option>
+              <option value="4">Saúde</option>
+              <option value="5">Transporte</option>
+            </select>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="caixa">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="assets/juros.png" class="img-fluid">
-          </div>
-          <div class="col-md-6 d-flex">
-            <div class="align-self-center">
-              <h2>
-                Pare de pagar juros, economize.
-              </h2>
-              <p>
-                Manter as contas em dia é sempre um problema? O Finans avisa você: receba alertas de contas a pagar e a receber!
-              </p>
-              <a href="" class="btn btn-dark">Veja Mais</a>
+        </div> <!-- container  -->
+        <div class="container" id="espaço">
+          <div class="row">
+            <div class="col-md-8">
+              <input type="text" class="form-control" placeholder="Descrição" id="descricao" />
             </div>
-          </div>          
-        </div>
-      </div>
-    </section>
-    <section class="caixa">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="assets/facil.png" class="img-fluid">
-            <h4>Fácil de usar</h4>
-            <p>
-              O Finans vai além do básico e permite que você faça controles incríveis, essenciais para suas finanças. Simples como tem que ser!
-            </p>
+
+            <div class="col-md-2">
+              <input type="text" class="form-control" placeholder="Valor" id="valor" />
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-end">
+              <button type="button" class="btn btn-dark" onclick="cadastrarDespesa()">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
           </div>
-          <div class="col-md-4">
-            <img src="assets/economize.png" class="img-fluid">
-            <h4>Economize seu tempo</h4>
-            <p>
-              Tempo é dinheiro! Em segundos, você tem tudo sob controle e aproveite seu tempo com o que realmente importa pra você!
-            </p>
-          </div>
-          <div class="col-md-4">
-            <img src="assets/suporte.png" class="img-fluid">
-            <h4>Suporte de amigo</h4>
-            <p>
-              Dúvidas? Perguntas? Nosso suporte super legal ajuda você! A gente tá aqui para resolver seus problemas e deixar sua vida bem mais fácil!
-            </p>
-          </div>       
-        </div>
-      </div>
+        </div> <!-- row  -->
+      </div> <!-- container  -->
     </section>
 
-    <footer class="mt-4 mb-4">
+  <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-dark">
+          <h5 class="modal-title" id="modalTitulo"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body" id="modalConteudo"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: #ffc107;" data-dismiss="modal" id="modalBotao"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <footer class="mt-4 mb-4" style="margin: 20px;">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -179,5 +170,9 @@
         </div>        
       </div>      
     </footer>
-  </body>
+    
+
+  </body>	
+  
+
 </html>
